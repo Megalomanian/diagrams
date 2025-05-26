@@ -1,9 +1,69 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.9">
   <diagram name="Page-1" id="c2Xg9aU96JUeAy3ugSl0">
-    <mxGraphModel>
+    <mxGraphModel dx="1011" dy="613" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-1" value="中继节点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="230" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="320" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-3" value="监控子节点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="oK1Q3BLFyEfk0f0jwacC-4" target="oK1Q3BLFyEfk0f0jwacC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-16" value="采集信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oK1Q3BLFyEfk0f0jwacC-10">
+          <mxGeometry x="-0.0844" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-4" value="摄像头模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oK1Q3BLFyEfk0f0jwacC-5" target="oK1Q3BLFyEfk0f0jwacC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-18" value="做出及时提醒" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oK1Q3BLFyEfk0f0jwacC-17">
+          <mxGeometry x="-0.0075" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-5" value="声音模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-6" value="&lt;div style=&quot;&quot;&gt;头盔检测判别器：生成识别结果与置信度评分&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="320" y="330" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="oK1Q3BLFyEfk0f0jwacC-7" target="oK1Q3BLFyEfk0f0jwacC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-7" value="光照模块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-8" value="受检测实体" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="210" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-19" value="主程序：向头盔检测判别器系统传输视频流；根据判别结果操控声光模块做出及时提醒；根据下发策略进行配置调整" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="320" y="240" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-22" value="做出及时提醒" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="700" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-23" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oK1Q3BLFyEfk0f0jwacC-1" target="oK1Q3BLFyEfk0f0jwacC-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="450" as="sourcePoint" />
+            <mxPoint x="330" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oK1Q3BLFyEfk0f0jwacC-24" value="视频流传输&lt;div&gt;违规者信息提交&lt;br&gt;&lt;div&gt;策略下发&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oK1Q3BLFyEfk0f0jwacC-23">
+          <mxGeometry x="-0.2788" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
